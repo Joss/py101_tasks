@@ -7,4 +7,4 @@
 """
 
 if __name__ == '__main__':
-    pass
+    print(f"The password is {'stong' if re.fullmatch(r'[A-Za-z0-9]{8,}', input('Enter new password: ')) else 'weak'}")
