@@ -9,4 +9,4 @@
 """
 
 if __name__ == '__main__':
-    pass
+    [print("zip-zap") if not x % 15 else print("zap") if not x % 5 else print("zip") if not x % 3 else print(x) for x in range(1, 101)]
