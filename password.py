@@ -8,4 +8,4 @@
 import re 
 
 if __name__ == '__main__':
-    print(f"The password is {'stong' if re.fullmatch(r'[A-Za-z0-9]{8,}', input('Enter new password: ')) else 'weak'}")
+    print(f"The password is {'strong' if re.fullmatch(r'[A-Za-z0-9]{8,}', input('Enter new password: ')) else 'weak'}")
