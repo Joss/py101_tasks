@@ -22,7 +22,7 @@ def task_3():
     random_value = random.randint(0, UPPER_LIMIT)
     input_value = input(f"Enter your guess in 0-{UPPER_LIMIT}: ")
     while input_value not in ("", "exit"):
-        if not input_value.isdigit() or (integer_value := int(input_value)) > UPPER_LIMIT:
+        if not input_value.lstrip("-").isdigit() or (integer_value := int(input_value)) > UPPER_LIMIT:
             print("Wrong enter")
         else:
             if (integer_value == random_value):
