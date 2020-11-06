@@ -5,7 +5,7 @@ import keyword
 # количество чисел и сообщает, есть ли среди них чётное
 # x = list(map(int, input("Enter comma separated values: ").split()))
 def check_even():
-    if (list(filter(lambda number: int(number) % 2 == 0, input("Enter comma separated values: ").split(",")))):
+    if (list(filter(lambda number: (int(number) if number.isdigit() else 1) % 2 == 0, input("Enter comma separated values: ").split(",")))):
         print("There is an even number")
 
       
